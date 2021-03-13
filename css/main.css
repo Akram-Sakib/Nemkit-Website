@@ -1,0 +1,846 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,body {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #fff;
+}
+body, input, textarea, select {
+    font-family: Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+   }
+   .template{
+    width: 1140px;
+    margin: 0 auto;
+   }
+   .clear{
+    overflow: hidden;
+   }
+
+   .mainimg{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 0 0;
+    height: 650px;
+   }
+
+   /* HEADER SECTION START */
+
+   .headersection{
+    padding: 0 30px;
+    background: #01546B;
+    margin-bottom: 210px;
+   }
+   .headLeft{
+    float: left;
+    width: 300px;
+   }
+   .headLeft h1{
+    font-variant: small-caps;
+    font-weight: normal;
+    margin:30px 0; 
+   }
+   .headRight{
+    float: right;
+    width: 840px;
+   }
+   .headRight ul{
+    list-style: none;
+    float: right;
+    padding: 30px 0;
+   }
+   .headRight ul li{
+    display: block;
+    padding-left: 15px;
+    float: left;
+   }
+   .headRight ul li a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+   }
+   .headRight ul li a i {
+    margin-right: 3px;
+    font-size: 10px;
+    }
+   .headRight ul li a:hover,#active{
+    color: #0AC6FC;
+   }
+   /* Submenu */
+   .submenu_1{
+    opacity: 0;
+    visibility: hidden;
+    width: 180px;
+    position: absolute;
+    transition: .5s;
+   }
+  .submenu_1 ul {
+    background: #107D9C;
+    margin-top: 30px;
+    padding: 0;
+    overflow: hidden;
+  }
+   .submenu_1 ul li{
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #0AC6FC;
+   }
+   .headRight ul li:hover .submenu_1{
+    opacity: 1;
+    visibility: visible;
+   }
+   .submenu_1 ul li:hover{
+    background: #0AC6FC;
+    color: #ddd;
+    transition:all .5s ease;
+   }
+   .submenu_1 ul li a{
+    color: #fff !important;
+   }
+   .inside_Dpdn{
+    opacity: 0;
+    visibility: hidden;
+    width: 180px;
+    overflow: hidden;
+    position: absolute;
+    transform: scaleY(0);
+    transition: transform .5s;
+   }
+  .hover_me:hover .inside_Dpdn {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -62px;
+    margin-left: 165px;
+    width: 180px;
+    transform: scale(1);
+    }
+   .inside_Dpdn ul{}
+   .inside_Dpdn ul li{}
+
+   /* HEADER SECTION END */
+
+   /* Page Intro Start*/
+   .PageIntro{
+    margin-bottom: 200px;
+   }
+   .headBottom {
+    width: 650px;
+    }
+   .headBottom h1{
+    font-size: 5rem;
+    font-weight: normal;
+    }
+   .headBottom p {
+    font-size: 14px;
+    margin-bottom: 50px;
+    }
+   .btn1 {
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    background: #0AC6FC;
+    border: 0;
+    text-transform: uppercase;
+    border: 1px solid #0AC6FC;
+    cursor: pointer;
+    margin-right: 25px;
+    transition: .5s;
+    }
+    .btn1:hover{
+      background: transparent;
+      border: 1px solid #fff;
+    }
+    .btn2 {
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    background: transparent;
+    border: 0;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .5s;
+    }
+    .btn2:hover{
+      background: #0AC6FC;
+    }
+   /* Page Intro End*/
+
+  /*  Contact Section Start */
+  .contactsection{
+    background: #026B8A;
+    height: 145px;
+  }
+  .allcontent{
+    margin-top: 50px;
+  }
+  .samecontent_one:hover i,.samecontent_two:hover i,.samecontent_three:hover i,.samecontent_four:hover i{
+    color: #fff;
+    background: #0AC6FC;
+  }
+  .samecontact{
+    width: 240px;
+    display: block;
+    float: left;
+    margin-right: 30px;
+  }
+  .samecontact i,.samecontent_one i{
+    float: left;
+    background-color: rgba(255,255,255,.2);
+    color: #0AC6FC;
+    border-radius: 25px;
+    padding: 15px;
+    margin-right: 20px;
+    transition: 1s;
+  }
+  .contDesc{}
+  .contDesc h3{
+  }
+  .contDesc p{}
+  .contDesc p a{
+    text-decoration: none;
+    color: #0AC6FC;
+  }
+  /*  Contact Section End */
+
+  /*  Portfolio Section Start */
+  .portfoliosection{
+    padding: 90px 0;
+  }
+  .allArticle{
+    margin-top: 130px;
+  }
+  .middle {
+    color: #474747;
+    text-align: center;
+  }
+  .middle p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .middle h2{
+    font-weight: normal;
+    font-size: 22px;
+  }
+  .samePortfolio {
+    width: 304px;
+    padding: 45px 20px 25px 20px;
+    float: left;
+    border: 1px solid #0AC6FC;
+    margin-right: 50px;
+    margin-bottom: 55px;
+    transition: background 1s;
+  }
+  .samePortfolio:hover{ 
+     background: #026B8A;
+   }
+  .samePortfolio:hover p,.samePortfolio:hover h3{
+    color: #fff;
+  }
+  .samePortfolio:hover a{
+    color: #0AC6FC;
+  }
+  .samePortfolio:hover i{
+    background: #0AC6FC;
+  }
+
+  .samePortfolio i {
+    font-size: 30px;
+    background: #01546B;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 245px;
+    transition: 1s;
+  }
+  .rmvMargin{
+    margin-right: 0px;
+  }
+  .samePortfolio h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #474747;
+    transition: color 2s;
+  }
+  .samePortfolio p {
+    color: #474747;
+    font-size: 14px;
+    margin-bottom: 30px;
+    transition: color 2s;
+}
+  .samePortfolio a {
+    text-decoration: none;
+    color: #474747;
+}
+  /*  Portfolio Section End */
+
+  /*  Service Section End */
+  .servicesection{
+    padding: 80px 0;
+    background-image: url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .servicesection{}
+  .middle_2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+}
+  .servicesection p{}
+  .servicesection h2{
+    font-weight: normal;
+  }
+  .wrapservice{}
+  .mainservice {
+    width: 100%;
+    background: #fff;
+    color: #474747;
+    padding: 50px;
+}
+  .leftservice {
+    width: 670px;
+    float: left;
+    margin-right: 35px;
+}
+.leftservice h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+  .leftservice p {
+    margin-bottom: 20px;
+  }
+  .bottomserial{}
+  .bottomserial ul{}
+  .bottomserial ul li {
+    display: block;
+    float: left;
+    width: 328px;
+    margin-bottom: -5px;
+}
+.bottomserial ul li:hover span{
+  background: #01546B;
+}
+  .bottomserial ul li span {
+    background: #0AC6FC;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 8px;
+    padding: 3px 8px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+  .rightservice {
+    width: 417px;
+    float: right;
+}
+  .rightservice img{
+    width: 318px;
+    height: 360px;
+  }
+  /*  Service Section End */
+
+  /* Admin Section Start */
+  .adminsection{
+    padding: 85px 0;
+    background: #F4F4F4;
+  }
+  .mainadmin{
+    color: #474747;
+  }
+  .middle_3{
+    text-align: center;
+  }
+  .mainadmin p {
+    font-size: 12px;
+}
+  .mainadmin h2 {
+    font-weight: normal;
+    font-size: 20px;
+        margin-bottom: 80px;
+}
+.alladmin{
+  display: flex;
+  justify-content: space-between;
+}
+.admin{
+  width: 350px;
+}
+.adminbio{}
+.adminbio a {
+
+}
+.adminbio a img{
+  width: 350px;
+  height: 262px;
+}
+.adminbio figcaption{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.adminbio figcaption i {
+    font-size: 11px;
+    margin-right: 10px;
+} 
+.adminbio figcaption a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #0AC6FC;
+    border-right: 1px solid #ddd;
+    padding-right: 10px;
+}
+.adminbio figcaption span {
+    font-size: 11px;
+    margin-left: 10px;
+}
+.admin h3 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+.admin h3 a{
+  text-decoration: none;
+   color: #0AC6FC; 
+}
+.admin p {
+    font-size: 14px;
+}
+  
+
+ /*  Admin Section End */
+
+
+ /* FooterTop Section Start */
+.footertopsection{
+  background: #01546B;
+}
+.mainfoot{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.mainfoot h2{
+  font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 50px;
+
+}
+.same_text_1{
+  width: 250px;
+}
+.same_text_1 h2 {
+   
+}
+.same_text_1 p{
+  margin-bottom: 40px;
+}
+.same_text_1 p a{
+  color: #0AC6FC;
+  text-decoration: none;
+}
+.same_text_1 ul {
+    list-style: none;
+}
+.same_text_1 ul li {
+    display: block;
+    float: left;
+    height: 35px;
+    width: 35px;
+    background: #347689;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.same_text_1 ul li a{}
+.facebook:hover{
+    background: #3B5998;
+}
+.google:hover{
+  background: #DB4A39;
+}
+.linkedin:hover{
+  background: #0E76A8;
+}
+.twitter:hover{
+  background: #00ACEE;
+}
+.vk:hover{
+  background: #4E658E;
+}
+.same_text_1 ul li a i {
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 9px;
+    font-size: 18px;
+
+}
+
+
+
+.same_text_2 {
+  width: 250px;
+}
+.same_text_2 h2{}
+.same_text_2 ul {
+    list-style: none;
+}
+.same_text_2 ul li {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #347689;
+    margin-bottom: 15px;
+}
+.same_text_2 ul li:last-child{
+  border-bottom: 0px solid #347689;
+}
+.same_text_2 ul li a {
+    text-decoration: none;
+    color: #0AC6FC;
+}
+
+
+
+.same_text_3{
+  width: 250px;
+}
+.same_text_3 h2{}
+.same_text_3 p {
+    margin-bottom: 20px;
+}
+.same_text_3 input[type="text"], input[type="email"] {
+    width: 91%;
+    padding: 13px 0px 13px 20px;
+   margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #347689;
+    transition: .5s;
+}
+.same_text_3 input[type="text"]:focus{
+  background: #0AC6FC;
+}
+.same_text_3 input[type="email"]:focus{
+  background: #0AC6FC;
+}
+.same_text_3 input[type="submit"] {
+    padding: 13px;
+    background: #0AC6FC;
+    border: 1px solid #0AC6FC;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:all .5s;
+}
+.same_text_3 input[type="submit"]:hover{
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+
+.same_text_4{
+  width: 250px;
+}
+.same_text_4 h2{}
+.same_text_4 p{}
+.same_text_4 h3 {
+    font-weight: normal;
+}
+.same_text_4 h3 a{
+  text-decoration: none;
+  color: #0AC6FC;
+}
+.same_text_4 h5 {
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.bdr{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #347689;
+}
+/*  FooterTop Section End
+ */
+
+ /* Footer Section Start */
+.footersection{
+  padding:35px 0;
+  background: #026B8A;
+}
+.footleft{
+  float: left;
+}
+.footright{
+  float: right;
+}
+/*  Footer Section End */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
